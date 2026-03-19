@@ -1,13 +1,6 @@
 <p align="center">
   <br />
-  <code>&nbsp;██╗&nbsp;&nbsp;&nbsp;██╗███████╗&nbsp;██████╗████████╗██╗███████╗&nbsp;</code><br />
-  <code>&nbsp;██║&nbsp;&nbsp;&nbsp;██║██╔════╝██╔════╝╚══██╔══╝██║██╔════╝&nbsp;</code><br />
-  <code>&nbsp;██║&nbsp;&nbsp;&nbsp;██║█████╗&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║███████╗&nbsp;</code><br />
-  <code>&nbsp;╚██╗&nbsp;██╔╝██╔══╝&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║╚════██║&nbsp;</code><br />
-  <code>&nbsp;&nbsp;╚████╔╝&nbsp;███████╗╚██████╗&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║███████║&nbsp;</code><br />
-  <code>&nbsp;&nbsp;&nbsp;╚═══╝&nbsp;&nbsp;╚══════╝&nbsp;╚═════╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝╚══════╝&nbsp;</code><br />
-  <br />
-  <strong>AI-driven design engineering CLI for Penpot</strong>
+  <img src="__REPO__SCREENSHOTS__/vectis-ss-1.png" alt="Vectis CLI" width="700" />
   <br /><br />
   <a href="#installation"><img src="https://img.shields.io/badge/bun-%E2%89%A51.0-blueviolet" alt="Bun"></a>
   <a href="#installation"><img src="https://img.shields.io/badge/node-%E2%89%A518-blueviolet" alt="Node"></a>
@@ -84,25 +77,6 @@ See the [full setup guide](docs/penpot-setup/README.md) for plugin connection, t
 
 ```bash
 bun run dev
-```
-
-```
-  ╭────────────────────────────────────────────────────╮
-  │░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓██████████████│
-  │                                                    │
-  │   ██╗   ██╗███████╗ ██████╗████████╗██╗███████╗   │
-  │   ██║   ██║██╔════╝██╔════╝╚══██╔══╝██║██╔════╝   │
-  │   ██║   ██║█████╗  ██║        ██║   ██║███████╗   │
-  │   ╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║╚════██║   │
-  │    ╚████╔╝ ███████╗╚██████╗   ██║   ██║███████║   │
-  │     ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝   ╚═╝╚══════╝   │
-  │                                                    │
-  │  AI-driven design engineering for Penpot           │
-  │  v0.1.0  ·  Type /help for commands               │
-  │                                                    │
-  ╰────────────────────────────────────────────────────╯
-
-vectis >
 ```
 
 ```bash

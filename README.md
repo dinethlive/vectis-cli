@@ -63,7 +63,14 @@ bun run dev
 
 ### Penpot + MCP Server
 
-Vectis expects these services running locally:
+Vectis expects a Penpot instance and its MCP server running locally. Everything you need is in [`docs/penpot-setup/`](docs/penpot-setup/):
+
+```bash
+cd docs/penpot-setup
+bash start-penpot.sh       # Start Penpot (Docker) → http://localhost:9001
+bash setup-mcp.sh          # First time: clone Penpot repo + install MCP deps
+bash start-mcp.sh          # Start MCP server → ports 4400/4401/4402
+```
 
 | Port | Protocol | Service |
 |------|----------|---------|
@@ -71,13 +78,7 @@ Vectis expects these services running locally:
 | 4401 | HTTP | MCP Streamable HTTP (`/mcp`) |
 | 4402 | WebSocket | Live events |
 
-```bash
-# Start Penpot (Docker)
-docker compose -p penpot -f docker-compose.yaml up -d
-
-# Start MCP Server (from penpot repo mcp/ directory)
-pnpm run start
-```
+See the [full setup guide](docs/penpot-setup/README.md) for plugin connection, troubleshooting, and more.
 
 ## Quick Start
 

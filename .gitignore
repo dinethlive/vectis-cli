@@ -1,0 +1,71 @@
+# Dependencies
+node_modules/
+bun.lockb
+
+# Build output
+dist/
+
+# Vectis project config (contains API keys, tokens, user paths)
+.vectis/
+
+# SQLite databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Test coverage
+coverage/
+
+# ── Sensitive / Credentials ─────────────────────────────────────────────────
+
+# Environment files (may contain ANTHROPIC_API_KEY, secrets)
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Secret / credential files
+secrets.*
+credentials.*
+*.secret
+*.secrets
+*secret*.json
+*credentials*.json
+
+# Private keys & certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+# Config overrides that may contain tokens
+*.local
+config.local.*
+config.private.*
+
+# Logs (can contain request bodies, tokens, API responses)
+*.log
+logs/
+
+# ── Claude Code ──────────────────────────────────────────────────────────────
+CLAUDE.md
+.claude/
+
+# ── OS / Editor ──────────────────────────────────────────────────────────────
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/settings.json
+.vscode/*.code-snippets
+.idea/
+*.suo
+*.user

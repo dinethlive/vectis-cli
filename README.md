@@ -16,16 +16,17 @@ Vectis is a slash-command REPL that connects to a self-hosted [Penpot](https://p
 
 ## Features
 
-- **`/create` Pipeline** — Describe a UI in natural language, get a validated layout spec, preview as ASCII, then push directly to Penpot (flex + grid)
-- **`@reference` System** — Pull files (`@src/tokens.json`), folders (`@briefs/`), Penpot boards (`@penpot:Dashboard/Home`), and images (`@image:mockup.png`) into Claude's context
-- **`/structure` Onboarding** — Feed messy brief documents; Vectis converses with you to generate structured flows, screens, and context files
-- **30+ Slash Commands** — Setup, design generation, auditing, analysis, flow navigation, skill management, conversation history
-- **Skills System** — Extend the AI with project-local, global, or community skills (markdown instruction sets injected into prompts)
-- **Live Penpot Bridge** — MCP client for canvas operations + WebSocket listener for real-time selection and shape events
-- **SQLite Graph Store** — Persistent project graph (flows, screens, boards, tokens) with migration support
-- **Conversation History** — Sessions are stored and resumable, with auto-compaction at token budget limits
-- **Vim Mode & Keybindings** — Modal editing, paste mode, customizable keybindings via `~/.vectis/keybindings.json`
-- **Purple Terminal UI** — Truecolor gradient banner, themed prompt, and consistent purple accent palette
+| Feature | What it does |
+|---------|-------------|
+| `/create` pipeline | Natural language → validated LayoutSpec → ASCII preview → push to Penpot (flex + grid) |
+| `@reference` system | Inject files, folders, Penpot boards, images, tokens, and selections into AI context |
+| `/structure` onboarding | Conversational brief-to-structure — generates flows, screens, and context files |
+| 30+ slash commands | Setup, generation, auditing, analysis, flow navigation, skills, history |
+| Skills system | Extend AI with project-local, global, or community skill files (markdown → prompt) |
+| Live Penpot bridge | MCP client for canvas ops + WebSocket for real-time selection/shape events |
+| SQLite graph store | Persistent project graph (flows, screens, boards, tokens) with migrations |
+| Conversation history | Stored, resumable sessions with auto-compaction at token limits |
+| Vim mode | Modal editing, paste mode, customizable keybindings |
 
 ## Installation
 

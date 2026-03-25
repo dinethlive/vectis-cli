@@ -10,7 +10,7 @@
 
 ---
 
-Vectis is a slash-command REPL that connects to a self-hosted [Penpot](https://penpot.app) instance via its official MCP server and uses the Claude API for AI-powered design generation, auditing, and analysis — all from your terminal.
+Vectis is a slash-command REPL that connects to a self-hosted [Penpot](https://penpot.app) instance via its official MCP server and uses the Claude API for AI-powered design generation, auditing, and analysis, all from your terminal.
 
 > **The CLI is the brain. Each project folder is its memory. Penpot is the canvas. Slash commands are the language. `@references` are the inputs.**
 
@@ -20,7 +20,7 @@ Vectis is a slash-command REPL that connects to a self-hosted [Penpot](https://p
 |---------|-------------|
 | `/create` pipeline | Natural language → validated LayoutSpec → ASCII preview → push to Penpot (flex + grid) |
 | `@reference` system | Inject files, folders, Penpot boards, images, tokens, and selections into AI context |
-| `/structure` onboarding | Conversational brief-to-structure — generates flows, screens, and context files |
+| `/structure` onboarding | Conversational brief-to-structure: generates flows, screens, and context files |
 | 30+ slash commands | Setup, generation, auditing, analysis, flow navigation, skills, history |
 | Skills system | Extend AI with project-local, global, or community skill files (markdown → prompt) |
 | Live Penpot bridge | MCP client for canvas ops + WebSocket for real-time selection/shape events |
@@ -37,7 +37,7 @@ Vectis is a slash-command REPL that connects to a self-hosted [Penpot](https://p
 | [Bun](https://bun.sh) | >= 1.0 | Runtime |
 | [Penpot](https://penpot.app) | Self-hosted or cloud | Design canvas |
 | [Penpot MCP Server](https://github.com/penpot/penpot) | `mcp/` directory | Canvas bridge |
-| Anthropic API Key | — | AI features |
+| Anthropic API Key | - | AI features |
 
 ### Setup
 
@@ -122,7 +122,7 @@ vectis >
 
 | Command | Description |
 |---------|-------------|
-| `/init` | Setup wizard — API key, Penpot URLs, project config |
+| `/init` | Setup wizard: API key, Penpot URLs, project config |
 | `/doctor` | Validate API key, Penpot connection, MCP server |
 | `/pull` | Scan Penpot file for pages, boards, components, tokens |
 
@@ -140,7 +140,7 @@ vectis >
 
 | Command | Description |
 |---------|-------------|
-| `/structure` | Conversational onboarding — generate flows/screens from brief files |
+| `/structure` | Conversational onboarding: generate flows/screens from brief files |
 | `/flow [name]` | Show or switch active flow |
 | `/flows` | List all tracked flows |
 | `/checkout <flow>` | Switch to a flow and load its context |
@@ -189,12 +189,12 @@ Description ──► Prompt Assembly ──► Claude (tool_use) ──► Post
               component patterns   output tool          fill text defaults  rules      the spec
 ```
 
-1. **Prompt Assembly** — System prompt with LayoutSpec schema, design principles, component pattern library (11 patterns), active skills, and detected layout template
-2. **Generation** — Claude returns a structured `LayoutSpec` via `tool_use` for reliable JSON extraction
-3. **Post-Processing** — Snap to 4px grid, enforce 32px minimum for interactive elements, fill text defaults, warn on low contrast
-4. **Validation** — Zod structural validation + business rules (token refs, naming conventions, layout requirements)
-5. **Preview** — ASCII tree preview in the terminal
-6. **Push** — User chooses: push to Penpot, edit, regenerate, save spec, or quit
+1. **Prompt Assembly** - System prompt with LayoutSpec schema, design principles, component pattern library (11 patterns), active skills, and detected layout template
+2. **Generation** - Claude returns a structured `LayoutSpec` via `tool_use` for reliable JSON extraction
+3. **Post-Processing** - Snap to 4px grid, enforce 32px minimum for interactive elements, fill text defaults, warn on low contrast
+4. **Validation** - Zod structural validation + business rules (token refs, naming conventions, layout requirements)
+5. **Preview** - ASCII tree preview in the terminal
+6. **Push** - User chooses: push to Penpot, edit, regenerate, save spec, or quit
 
 ## `@reference` System
 
@@ -345,6 +345,14 @@ your-project/
 ## License
 
 MIT
+
+## Status & Contributing
+
+Vectis is under active development. Expect breaking changes as the core stabilises, but things will improve steadily with each release.
+
+**Why this exists:** Context loss is the single biggest problem in AI-assisted design today. AI can generate beautiful UIs, but without project context (tokens, flows, screens, constraints) the output is disconnected from reality. Vectis exists to fix that: a CLI that manages and preserves design context, with Penpot as the canvas.
+
+Contributions are welcome. Open an [issue](https://github.com/dinethlive/vectis-cli/issues) for bugs or ideas, or submit a pull request. All feedback helps.
 
 ---
 
